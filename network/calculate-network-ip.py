@@ -3,6 +3,7 @@
 import sys
 
 def calculate_network(ip_cidr):
+    
     # Split IP and subnet mask
     ip, cidr_mask = ip_cidr.split('/')
     cidr_mask = int(cidr_mask)
@@ -31,6 +32,7 @@ def calculate_network(ip_cidr):
     return network_with_mask
 
 if __name__ == "__main__":
+    
     # Check if a command-line argument is passed
     if len(sys.argv) != 2:
         print("Usage: python name_of_program.py ip_address/subnet_mask")
